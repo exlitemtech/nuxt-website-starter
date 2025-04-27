@@ -1,8 +1,8 @@
 <template>
-  <section id="our-people" class="py-20 bg-[var(--color-beige-50)]">
+  <section id="our-team" class="py-20 bg-[var(--color-beige-50)]">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-[var(--color-text-dark)] mb-4 font-[var(--font-heading)]">Our People</h2>
+        <h2 class="text-4xl font-bold text-[var(--color-text-dark)] mb-4 font-[var(--font-heading)]">Our Team</h2>
         <p class="text-[var(--color-text-muted)] max-w-3xl mx-auto">Meet our team of experienced attorneys who are dedicated to providing exceptional legal representation.</p>
       </div>
       
@@ -14,7 +14,7 @@
           
           <div class="relative overflow-hidden h-[350px]">
             <img 
-              src="https://placehold.co/600x800/2a4365/FFFFFF?text=Rajesh+Sharma" 
+              src="https://placehold.co/600x800/2a4365/FFFFFF?text=Shouryendu+Ray" 
               alt="Rajesh Sharma" 
               class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             >
@@ -22,8 +22,8 @@
             
             <!-- Name overlay on image -->
             <div class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-              <h3 class="text-3xl font-semibold mb-1 text-white font-[var(--font-heading)]">Rajesh Sharma</h3>
-              <p class="text-[var(--color-beige-100)] opacity-90 text-base tracking-wide">Senior Partner, White Collar Crimes</p>
+              <h3 class="text-3xl font-semibold mb-1 text-white font-[var(--font-heading)]">Shouryendu Ray</h3>
+              <p class="text-[var(--color-beige-100)] opacity-90 text-base tracking-wide">Partner</p>
             </div>
           </div>
           
@@ -53,7 +53,7 @@
                 </a>
               </div>
               <a 
-                href="/lawyers/rajesh-sharma" 
+                href="/lawyers/shouryendu-ray" 
                 class="inline-flex items-center bg-[var(--color-beige-50)] hover:bg-[var(--color-beige-100)] text-[var(--color-text-dark)] py-2 px-4 rounded-sm transition-colors duration-300 group/btn"
               >
                 View Profile
@@ -72,16 +72,16 @@
           
           <div class="relative overflow-hidden h-[350px]">
             <img 
-              src="https://placehold.co/600x800/213642/FFFFFF?text=Priya+Desai" 
-              alt="Priya Desai" 
+              src="https://placehold.co/600x800/213642/FFFFFF?text=Neelu+Mohan" 
+              alt="Neelu Mohan" 
               class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             >
             <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-text-dark)]/90 via-[var(--color-text-dark)]/50 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-500"></div>
             
             <!-- Name overlay on image -->
             <div class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-              <h3 class="text-3xl font-semibold mb-1 text-white font-[var(--font-heading)]">Priya Desai</h3>
-              <p class="text-[var(--color-beige-100)] opacity-90 text-base tracking-wide">Managing Partner, Direct Taxes</p>
+              <h3 class="text-3xl font-semibold mb-1 text-white font-[var(--font-heading)]">Neelu Mohan</h3>
+              <p class="text-[var(--color-beige-100)] opacity-90 text-base tracking-wide">Partner</p>
             </div>
           </div>
           
@@ -130,16 +130,16 @@
           
           <div class="relative overflow-hidden h-[350px]">
             <img 
-              src="https://placehold.co/600x800/234554/FFFFFF?text=Arjun+Mehta" 
-              alt="Arjun Mehta" 
+              src="https://placehold.co/600x800/234554/FFFFFF?text=Dr.+Manas+S+Ray" 
+              alt="Dr. Manas S Ray" 
               class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             >
             <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-text-dark)]/90 via-[var(--color-text-dark)]/50 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-500"></div>
             
             <!-- Name overlay on image -->
             <div class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-              <h3 class="text-3xl font-semibold mb-1 text-white font-[var(--font-heading)]">Arjun Mehta</h3>
-              <p class="text-[var(--color-beige-100)] opacity-90 text-base tracking-wide">Partner, Corporate Advisory</p>
+              <h3 class="text-3xl font-semibold mb-1 text-white font-[var(--font-heading)]">Dr. Manas S Ray</h3>
+              <p class="text-[var(--color-beige-100)] opacity-90 text-base tracking-wide">Partner</p>
             </div>
           </div>
           

@@ -8,8 +8,8 @@
     
     
     
-    <!-- Our People Section -->
-    <OurPeople />
+    <!-- Our Team Section -->
+    <OurTeam />
     
     <!-- Awards Section -->
     <Awards />
@@ -28,7 +28,7 @@ import Footer from '~/components/Footer.vue'
 import HeroSection from '~/components/HeroSection.vue'
 import ContactUs from '~/components/ContactUs.vue'
 import ColorToggle from '~/components/ColorToggle.vue'
-import OurPeople from '~/components/OurPeople.vue'
+import OurTeam from '~/components/OurTeam.vue'
 import Awards from '~/components/Awards.vue'
 import PracticeAreas from '~/components/PracticeAreas.vue'
 </script>

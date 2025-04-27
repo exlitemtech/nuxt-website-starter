@@ -1,24 +1,24 @@
 <template>
-  <section class="bg-[var(--color-beige-100)] py-32 relative overflow-hidden">
+  <section class="bg-[var(--color-beige-100)] py-16 md:py-32 relative overflow-hidden">
     <!-- Background Image Layer -->
-    <div class="absolute inset-0 bg-[url('/img/law-books.jpg')] bg-cover bg-center opacity-90"></div>
+    <div class="absolute inset-0 bg-[url('/img/nora-hero-image.png')] bg-cover bg-center"></div>
     
     <!-- Glassmorphic Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-r from-[var(--color-beige-100)]/60 to-[var(--color-beige-200)]/70 backdrop-blur-[8px]">
+    <div class="absolute inset-0 bg-gradient-to-r from-[var(--color-beige-100)]/40 to-[var(--color-beige-200)]/50 backdrop-blur-[4px]">
       <!-- Animated light reflection -->
-      <div class="absolute inset-0 opacity-20">
-        <div class="absolute -inset-[20%] bg-white/30 rounded-full blur-3xl animate-glass-shine"></div>
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute -inset-[20%] bg-white/20 rounded-full blur-3xl animate-glass-shine"></div>
       </div>
     </div>
     
-    <div class="container mx-auto px-6 relative z-10">
-      <div class="max-w-4xl backdrop-blur-[10px] p-10 rounded-lg bg-white/20 border border-white/30 shadow-xl backdrop-saturate-150 relative overflow-hidden">
+    <div class="container mx-auto px-4 sm:px-6 relative z-10">
+      <div class="max-w-4xl backdrop-blur-[10px] p-5 sm:p-8 md:p-10 rounded-lg bg-white/40 border border-white/50 shadow-xl backdrop-saturate-150 relative overflow-hidden">
         <!-- Inner light reflection for glass container -->
         <div class="absolute -inset-[100%] bg-white/20 rounded-full blur-3xl animate-glass-shine-slow"></div>
         
         <div class="relative z-10"> <!-- Content wrapper to keep text above the animation -->
-          <h1 class="text-5xl md:text-6xl mb-6 font-[var(--font-heading)] leading-tight text-[var(--color-text-dark)] tracking-wide">Committed to <span class="text-[var(--color-accent-500)]">Excellence</span> in Legal Practice</h1>
-          <p class="text-xl mb-10 text-[var(--color-text-dark)] max-w-2xl leading-relaxed">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 font-[var(--font-heading)] leading-tight text-[var(--color-text-dark)] tracking-wide">Committed to <span class="text-[var(--color-accent-500)] font-bold drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]">Excellence</span> in Legal Practice</h1>
+          <p class="text-lg md:text-xl mb-6 md:mb-10 text-[var(--color-text-dark)] max-w-2xl leading-relaxed">
             With over 25 years of experience, our attorneys provide exceptional legal representation and personalized service in corporate, family, and real estate law.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
@@ -75,5 +75,14 @@
 
 .animate-glass-shine-slow {
   animation: glass-shine-slow 25s linear infinite;
+}
+
+/* Add text shadow support for better readability */
+.drop-shadow-sm {
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+}
+
+.drop-shadow-md {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
 }
 </style> 

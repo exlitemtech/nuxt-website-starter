@@ -57,7 +57,7 @@ h6 {
 .btn-primary {
     background-color: var(--color-accent-500);
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.625rem 1.25rem;
     font-family: var(--font-sans);
     font-weight: 600;
     border-radius: 0.25rem;
@@ -65,6 +65,16 @@ h6 {
     border: 1px solid var(--color-accent-600);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(4px);
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .btn-primary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        width: auto;
+    }
 }
 
 .btn-primary:hover {
@@ -76,7 +86,7 @@ h6 {
 .btn-secondary {
     background-color: transparent;
     color: var(--color-text-dark);
-    padding: 0.75rem 1.5rem;
+    padding: 0.625rem 1.25rem;
     font-family: var(--font-sans);
     font-weight: 600;
     border-radius: 0.25rem;
@@ -85,6 +95,16 @@ h6 {
     backdrop-filter: blur(4px);
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .btn-secondary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        width: auto;
+    }
 }
 
 .btn-secondary:hover {
