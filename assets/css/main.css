@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Law Firm Color Palette */
+@theme {
+    /* Light beige and white theme */
+    --color-beige-50: #fefcf9;
+    --color-beige-100: #f7f3ed;
+    --color-beige-200: #f0e8da;
+    --color-beige-300: #e6d9c5;
+    --color-beige-400: #d8c9b1;
+    --color-beige-500: #c8b59a;
+    --color-beige-600: #b19b7c;
+    --color-beige-700: #96815f;
+    --color-beige-800: #7a6849;
+    --color-beige-900: #5c4d37;
+
+    /* Accent color - teal from logo */
+    --color-accent-300: #40cabc;
+    --color-accent-400: #25b6a8;
+    --color-accent-500: #00A99D;
+    /* Logo teal color */
+    --color-accent-600: #008f85;
+    --color-accent-700: #007972;
+
+    /* Text colors */
+    --color-text-light: #f7f3ed;
+    --color-text-dark: #3d3528;
+    --color-text-muted: #7a6849;
+
+    /* Font settings */
+    --font-body: 'Georgia', serif;
+    --font-heading: 'Libre Baskerville', 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif;
+    --font-sans: 'Lato', sans-serif;
+}
+
+/* General styling */
+body {
+    font-family: var(--font-body);
+    color: var(--color-text-dark);
+    background-color: var(--color-beige-50);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text-dark);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/* Custom utility classes */
+.btn-primary {
+    background-color: var(--color-accent-500);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-accent-600);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-600);
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.07);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-text-dark);
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-beige-300);
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: var(--color-beige-400);
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom styles to verify CSS is loading */
+.css-test {
+    background-color: purple;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
