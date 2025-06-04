@@ -28,16 +28,16 @@
               <div class="w-16 h-0.5 bg-[var(--color-accent-500)] mb-5"></div>
               <div class="mb-6 space-y-3 text-sm md:text-base leading-relaxed">
                 <p class="text-[var(--color-text-muted)]">
-                  The Bar Council of India does not permit advertisement or solicitation by advocates in any form or manner. By accessing this website, www.norachambers.in, you acknowledge and confirm that you are seeking information relating to Nora Chambers of your own accord and that there has been no form of solicitation, advertisement or inducement by Nora Chambers or its members.
+                  The Bar Council of India does not permit advertisement or solicitation by advocates in any form or manner. By accessing this website, www.punyark.com, you acknowledge and confirm that you are seeking information relating to Punyark Legal of your own accord and that there has been no form of solicitation, advertisement or inducement by Punyark Legal or its members.
                 </p>
                 <p class="text-[var(--color-text-muted)]">
                   The content of this website is for informational purposes only and should not be interpreted as soliciting or advertisement. No material/information provided on this website should be construed as legal advice.
                 </p>
                 <p class="text-[var(--color-text-muted)]">
-                  Nora Chambers shall not be liable for consequences of any action taken by relying on the material/information provided on this website.
+                  Punyark Legal shall not be liable for consequences of any action taken by relying on the material/information provided on this website.
                 </p>
                 <p class="text-[var(--color-text-muted)]">
-                  The contents of this website are the intellectual property of Nora Chambers.
+                  The contents of this website are the intellectual property of Punyark Legal.
                 </p>
               </div>
             </div>

@@ -1,10 +1,10 @@
 <template>
   <section class="bg-[var(--color-beige-100)] py-16 md:py-32 relative overflow-hidden">
     <!-- Background Image Layer -->
-    <div class="absolute inset-0 bg-[url('/img/nora-hero-image.png')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-[url('/img/PatnaHighCourt.jpg')] bg-cover bg-center"></div>
     
     <!-- Glassmorphic Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-r from-[var(--color-beige-100)]/40 to-[var(--color-beige-200)]/50 backdrop-blur-[4px]">
+    <div class="absolute inset-0 bg-gradient-to-r from-[var(--color-beige-100)]/60 to-[var(--color-beige-200)]/70 backdrop-blur-[2px]">
       <!-- Animated light reflection -->
       <div class="absolute inset-0 opacity-15">
         <div class="absolute -inset-[20%] bg-white/20 rounded-full blur-3xl animate-glass-shine"></div>
@@ -17,9 +17,9 @@
         <div class="absolute -inset-[100%] bg-white/20 rounded-full blur-3xl animate-glass-shine-slow"></div>
         
         <div class="relative z-10"> <!-- Content wrapper to keep text above the animation -->
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 font-[var(--font-heading)] leading-tight text-[var(--color-text-dark)] tracking-wide">Committed to <span class="text-[var(--color-accent-500)] font-bold drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]">Excellence</span> in Legal Practice</h1>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 font-[var(--font-heading)] leading-tight text-[var(--color-text-dark)] tracking-wide">Dedicated <span class="text-[var(--color-accent-500)] font-bold drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]">Legal Services</span> at Patna High Court</h1>
           <p class="text-lg md:text-xl mb-6 md:mb-10 text-[var(--color-text-dark)] max-w-2xl leading-relaxed">
-            With over 25 years of experience, our attorneys provide exceptional legal representation and personalized service in corporate, family, and real estate law.
+            With over 40 years of experience in civil and criminal litigation, Punyark Legal, under the leadership of Advocate Arun Kumar Arun, provides expert legal representation and personalized service to clients across Bihar.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <a 
@@ -32,7 +32,7 @@
               href="#practice-areas" 
               class="btn-secondary text-center inline-block backdrop-blur-sm bg-white/30 border border-white/40 hover:bg-white/40"
             >
-              Our Practice Areas
+              Practice Areas
             </a>
           </div>
         </div>

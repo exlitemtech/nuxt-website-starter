@@ -6,9 +6,7 @@
     <!-- Practice Areas Section -->
     <PracticeAreas />
     
-    
-    
-    <!-- Our Team Section -->
+    <!-- About Section -->
     <OurTeam />
     
     <!-- Awards Section -->

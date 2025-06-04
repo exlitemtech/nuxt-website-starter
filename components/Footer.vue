@@ -3,19 +3,19 @@
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
         <div class="md:col-span-4">
-          <h3 class="text-2xl mb-4 font-[var(--font-heading)] text-[var(--color-text-dark)] tracking-wide">Nora Chambers</h3>
-          <p class="text-[var(--color-text-muted)] mb-4">Dedicated to providing exceptional legal services with integrity and professionalism since 1998.</p>
-          <p class="text-[var(--color-accent-500)]">Bar Association Certified</p>
+          <h3 class="text-2xl mb-4 font-[var(--font-heading)] text-[var(--color-text-dark)] tracking-wide">Punyark Legal</h3>
+          <p class="text-[var(--color-text-muted)] mb-4">Dedicated to providing exceptional legal services with integrity and professionalism since 2008.</p>
+          <p class="text-[var(--color-accent-500)]">Bar Council of Bihar Certified</p>
         </div>
         <div class="md:col-span-5">
           <h3 class="text-xl font-medium mb-4 text-[var(--color-text-dark)] font-[var(--font-heading)]">Practice Areas</h3>
           <nav class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
-            <div><a href="#economic-offences" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Economic Offences</a></div>
-            <div><a href="#tax-litigation" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Direct Tax Litigation</a></div>
-            <div><a href="#securities-law" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Securities Law</a></div>
-            <div><a href="#corporate-advisory" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Corporate Advisory</a></div>
-            <div><a href="#intellectual-property" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Intellectual Property</a></div>
-            <div><a href="#white-collar-crimes" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">White Collar Crimes</a></div>
+            <div><a href="#civil-litigation" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Civil Litigation</a></div>
+            <div><a href="#criminal-defense" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Criminal Defense</a></div>
+            <div><a href="#family-law" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Family Law</a></div>
+            <div><a href="#property-law" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Property Law</a></div>
+            <div><a href="#constitutional-law" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Constitutional Law</a></div>
+            <div><a href="#corporate-law" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Corporate Law</a></div>
           </nav>
         </div>
         <div class="md:col-span-3">
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="border-t border-[var(--color-beige-300)] mt-10 pt-6 text-center text-[var(--color-text-muted)]">
-        <p>&copy; {{ new Date().getFullYear() }} Nora Chambers Law Firm. All rights reserved.</p>
+        <p>&copy; {{ new Date().getFullYear() }} Punyark Legal. All rights reserved.</p>
         <div class="mt-2 text-sm">
           <a href="#privacy" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors mr-4">Privacy Policy</a>
           <a href="#terms" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Terms of Service</a>

@@ -15,8 +15,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-[var(--color-text-dark)] mb-2 text-center font-[var(--font-heading)]">Leading Disputes Boutique</h3>
-          <p class="text-[var(--color-text-muted)] text-center">Recognized by Thomson Reuters – Asian Legal Business, 2024</p>
+          <h3 class="text-xl font-semibold text-[var(--color-text-dark)] mb-2 text-center font-[var(--font-heading)]">Expert in Tax Law</h3>
+          <p class="text-[var(--color-text-muted)] text-center">Recognized by Patna Bar Association, 2024</p>
         </div>
         
         <!-- Award 2 -->
@@ -26,8 +26,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-[var(--color-text-dark)] mb-2 text-center font-[var(--font-heading)]">Leading Aviation Practice</h3>
-          <p class="text-[var(--color-text-muted)] text-center">Recognized by India Business Law Journal, 2024</p>
+          <h3 class="text-xl font-semibold text-[var(--color-text-dark)] mb-2 text-center font-[var(--font-heading)]">Excellence in Corporate Law</h3>
+          <p class="text-[var(--color-text-muted)] text-center">Bihar State Bar Council Recognition, 2023</p>
         </div>
         
         <!-- Award 3 -->
@@ -37,43 +37,40 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-[var(--color-text-dark)] mb-2 text-center font-[var(--font-heading)]">40-under-40 Recognition</h3>
-          <p class="text-[var(--color-text-muted)] text-center">Shouryendu Ray, Partner, listed by BusinessWorld Legal, 2022</p>
+          <h3 class="text-xl font-semibold text-[var(--color-text-dark)] mb-2 text-center font-[var(--font-heading)]">15+ Years Experience</h3>
+          <p class="text-[var(--color-text-muted)] text-center">Established Practice at Patna High Court</p>
         </div>
       </div>
       
       <!-- Recognitions -->
       <div class="mt-16 max-w-5xl mx-auto">
         <div class="border-t border-[var(--color-beige-200)] pt-12">
-          <h3 class="text-2xl font-semibold text-[var(--color-text-dark)] mb-6 text-center font-[var(--font-heading)]">Industry Recognition</h3>
+          <h3 class="text-2xl font-semibold text-[var(--color-text-dark)] mb-6 text-center font-[var(--font-heading)]">Professional Affiliations</h3>
           
           <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
             <!-- Logo 1 -->
             <div class="bg-white p-4 shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-24">
               <div class="text-center">
-                <div class="font-semibold text-lg text-[var(--color-text-dark)]">Thomson Reuters</div>
-                <div class="text-sm text-[var(--color-text-muted)]">Asian Legal Business</div>
+                <div class="font-semibold text-lg text-[var(--color-text-dark)]">Patna High Court</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Bar Association</div>
               </div>
             </div>
             
             <!-- Logo 2 -->
             <div class="bg-white p-4 shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-24">
               <div class="text-center">
-                <div class="font-semibold text-lg text-[var(--color-text-dark)]">India Business Law</div>
-                <div class="text-sm text-[var(--color-text-muted)]">Journal</div>
+                <div class="font-semibold text-lg text-[var(--color-text-dark)]">Bihar State</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Bar Council</div>
               </div>
             </div>
             
             <!-- Logo 3 -->
             <div class="bg-white p-4 shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-24">
               <div class="text-center">
-                <div class="font-semibold text-lg text-[var(--color-text-dark)]">BusinessWorld</div>
-                <div class="text-sm text-[var(--color-text-muted)]">Legal 40-under-40</div>
+                <div class="font-semibold text-lg text-[var(--color-text-dark)]">Supreme Court</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Bar Association</div>
               </div>
             </div>
-            
-            <!-- Logo 4 -->
-         
           </div>
         </div>
       </div>
@@ -86,9 +83,9 @@
           </svg>
         </div>
         <blockquote class="text-xl text-[var(--color-text-dark)] italic mb-4">
-          Our accolades reflect our unwavering commitment to legal excellence and client service, but our true measure of success is the trust our clients place in us every day.
+          With over 40 years of experience at the Patna High Court, I provide personalized legal solutions with a focus on integrity, expertise, and client satisfaction.
         </blockquote>
-        <p class="text-[var(--color-text-muted)]">— Managing Partner, Nora Chambers</p>
+        <p class="text-[var(--color-text-muted)]">— Founder, Punyark Legal</p>
       </div>
     </div>
   </section>

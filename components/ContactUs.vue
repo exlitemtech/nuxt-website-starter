@@ -3,13 +3,13 @@
     <div class="container mx-auto px-6">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold mb-4 font-[var(--font-heading)] text-[var(--color-text-dark)]">Contact Our Office</h2>
-          <p class="text-[var(--color-text-muted)] max-w-3xl mx-auto">Schedule a consultation with one of our experienced attorneys to discuss your legal needs.</p>
+          <h2 class="text-4xl font-bold mb-4 font-[var(--font-heading)] text-[var(--color-text-dark)]">Schedule a Consultation</h2>
+          <p class="text-[var(--color-text-muted)] max-w-3xl mx-auto">I offer personalized legal consultations to understand your case and provide expert guidance tailored to your needs.</p>
         </div>
         
         <!-- Office Location and Map -->
         <div class="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div class="bg-[var(--color-beige-50)] p-8 shadow-md h-[400px] overflow-auto">
+          <div class="bg-[var(--color-beige-50)] p-8 shadow-md">
             <h3 class="text-2xl font-semibold mb-6 font-[var(--font-heading)] text-[var(--color-text-dark)]">Visit Our Office</h3>
             <div class="flex items-start mb-5">
               <div class="text-[var(--color-accent-500)] mr-4 mt-1 flex-shrink-0">
@@ -20,8 +20,8 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold mb-1 text-[var(--color-text-dark)]">Address:</h4>
-                <p class="text-[var(--color-text-muted)] mb-1">LGF, X-7, Hauz Khas</p>
-                <p class="text-[var(--color-text-muted)]">New Delhi 110016</p>
+                <p class="text-[var(--color-text-muted)] mb-1">Chamber No. 94, Bar Council Bhawan</p>
+                <p class="text-[var(--color-text-muted)]">Patna High Court, Patna 800001</p>
               </div>
             </div>
             
@@ -33,11 +33,8 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold mb-1 text-[var(--color-text-dark)]">Phone:</h4>
-                <p class="text-[var(--color-text-muted)] mb-1">
-                  <a href="tel:+911141075982" class="hover:text-[var(--color-accent-500)] transition-colors">+91 11 4107 5982</a> (Fixed)
-                </p>
                 <p class="text-[var(--color-text-muted)]">
-                  <a href="tel:+919953803458" class="hover:text-[var(--color-accent-500)] transition-colors">+91 99538 03458</a> (Mobile)
+                  <a href="tel:+919431660616" class="hover:text-[var(--color-accent-500)] transition-colors">+91 94316 60616</a>
                 </p>
               </div>
             </div>
@@ -51,15 +48,29 @@
               <div>
                 <h4 class="text-lg font-semibold mb-1 text-[var(--color-text-dark)]">Email:</h4>
                 <p class="text-[var(--color-text-muted)] mb-1">
-                  <a href="mailto:admin@norachambers.in" class="hover:text-[var(--color-accent-500)] transition-colors">admin@norachambers.in</a>
+                  <a href="mailto:akarun@punyark.com" class="hover:text-[var(--color-accent-500)] transition-colors">akarun@punyark.com</a>
                 </p>
                 <p class="text-[var(--color-text-muted)]">Response within 24 hours</p>
               </div>
             </div>
             
+            <div class="flex items-start mb-5">
+              <div class="text-[var(--color-accent-500)] mr-4 mt-1 flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold mb-1 text-[var(--color-text-dark)]">Consultation Hours:</h4>
+                <p class="text-[var(--color-text-muted)] mb-1">Monday - Friday: 10:00 AM - 6:00 PM</p>
+                <p class="text-[var(--color-text-muted)]">Saturday: 10:00 AM - 2:00 PM</p>
+                <p class="text-[var(--color-text-muted)] mt-2">By appointment only</p>
+              </div>
+            </div>
+            
             <div class="mt-4">
               <a 
-                href="https://www.google.com/maps/place/Nora+Chambers/@28.5526329,77.2044611,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce3ac9af8ec8f:0xaecc8a41f15018db!8m2!3d28.552633!4d77.209332!16s%2Fg%2F11t7z9fb6p" 
+                href="https://www.google.com/maps/place/Patna+High+Court/@25.6154,85.1354,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed567a0fbb6c1f:0x39ed567a0fbb6c1f!8m2!3d25.6154!4d85.1354!16s%2Fg%2F11t7z9fb6p" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="inline-flex items-center text-[var(--color-accent-500)] hover:text-[var(--color-accent-600)] transition-colors font-medium"
@@ -72,23 +83,22 @@
             </div>
           </div>
           
-          <div class="shadow-md h-[400px]">
+          <div class="shadow-md">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0251972294884!2d77.20675837559823!3d28.552633382445436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ac9af8ec8f%3A0xaecc8a41f15018db!2sNora%20Chambers!5e0!3m2!1sen!2sin!4v1692789654321!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8993703813526!2d85.1354!3d25.6154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed567a0fbb6c1f%3A0x39ed567a0fbb6c1f!2sPatna%20High%20Court!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
               width="100%" 
               height="100%" 
               style="border:0;" 
               allowfullscreen="" 
               loading="lazy"
-              class="w-full h-full"
-              title="Nora Chambers Location Map"
+              title="Punyark Legal Location Map"
             ></iframe>
           </div>
         </div>
         
         <div class="bg-[var(--color-beige-100)] rounded-none shadow-md p-8">
-          <h3 class="text-2xl font-semibold mb-6 font-[var(--font-heading)] text-[var(--color-text-dark)]">Contact Form</h3>
-          <form @submit.prevent="submitForm" class="space-y-8">
+          <h3 class="text-3xl font-semibold mb-8 font-[var(--font-heading)] text-[var(--color-text-dark)]">Schedule a Consultation</h3>
+          <form @submit.prevent="submitForm" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label for="name" class="block text-[var(--color-text-muted)] font-medium mb-2 font-[var(--font-sans)]">Full Name</label>
@@ -119,38 +129,36 @@
                 class="w-full px-4 py-3 border border-[var(--color-beige-300)] rounded-none focus:outline-none focus:ring-1 focus:ring-[var(--color-accent-500)] bg-white text-[var(--color-text-dark)]"
                 required
               >
-                <option value="" disabled selected>Please select a practice area</option>
-                <option value="economic-offences">Economic Offences</option>
-                <option value="direct-taxes">Direct Taxes</option>
-                <option value="securities-law">Securities Law</option>
-                <option value="corporate-advisory">Corporate Advisory</option>
-                <option value="intellectual-property">Intellectual Property</option>
-                <option value="banking-finance">Banking and Finance</option>
-                <option value="administrative-law">Administrative Law</option>
-                <option value="media-entertainment">Media and Entertainment</option>
-                <option value="white-collar">White Collar Crimes</option>
+                <option value="" disabled selected>Please select your legal matter</option>
+                <option value="tax-law">Tax Law</option>
+                <option value="corporate-law">Corporate Law</option>
+                <option value="civil-litigation">Civil Litigation</option>
+                <option value="criminal-law">Criminal Law</option>
+                <option value="property-law">Property Law</option>
+                <option value="family-law">Family Law</option>
                 <option value="other">Other</option>
               </select>
             </div>
             <div>
-              <label for="message" class="block text-[var(--color-text-muted)] font-medium mb-2 font-[var(--font-sans)]">Message</label>
+              <label for="message" class="block text-[var(--color-text-muted)] font-medium mb-2 font-[var(--font-sans)]">Brief Description of Your Case</label>
               <textarea 
                 id="message" 
                 v-model="form.message" 
-                rows="5" 
+                rows="4" 
                 class="w-full px-4 py-3 border border-[var(--color-beige-300)] rounded-none focus:outline-none focus:ring-1 focus:ring-[var(--color-accent-500)] bg-white text-[var(--color-text-dark)]"
                 required
+                placeholder="Please provide a brief overview of your legal matter..."
               ></textarea>
             </div>
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div class="text-[var(--color-text-muted)] text-sm">
-                <p>All consultations are confidential and protected by attorney-client privilege.</p>
+                <p>All consultations are confidential and protected by attorney-client privilege. I will personally review your case and respond within 24 hours.</p>
               </div>
               <button 
                 type="submit" 
                 class="bg-[var(--color-accent-500)] hover:bg-[var(--color-accent-600)] text-white font-bold py-3 px-8 rounded-none border border-[var(--color-accent-600)] transition-all duration-300 shadow-md font-[var(--font-sans)]"
               >
-                Submit Request
+                Request Consultation
               </button>
             </div>
           </form>

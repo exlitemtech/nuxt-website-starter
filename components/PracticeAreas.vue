@@ -24,40 +24,28 @@
 <script setup>
 const practiceAreas = [
   {
-    title: "Economic Offences",
-    description: "Comprehensive defense and representation in cases involving financial fraud, securities violations, and other economic crimes."
+    title: 'Civil Litigation',
+    description: 'Expert handling of civil disputes, property matters, and contractual issues with a focus on efficient resolution.'
   },
   {
-    title: "Direct Taxes",
-    description: "Expert representation in tax disputes, appeals, and advisory services for individuals and businesses facing complex tax issues."
+    title: 'Criminal Defense',
+    description: 'Strong defense representation in criminal cases with a track record of successful outcomes in complex matters.'
   },
   {
-    title: "Securities Law",
-    description: "Comprehensive litigation and advisory services for securities law compliance, violations, and regulatory matters."
+    title: 'Family Law',
+    description: 'Compassionate handling of divorce, custody, and family disputes with a focus on protecting client interests.'
   },
   {
-    title: "Corporate Advisory",
-    description: "Strategic legal guidance on business formation, corporate governance, compliance, and regulatory matters for businesses of all sizes."
+    title: 'Property Law',
+    description: 'Specialized expertise in property disputes, land acquisition matters, and real estate transactions.'
   },
   {
-    title: "Intellectual Property",
-    description: "Protection and litigation services for patents, trademarks, copyrights, and resolution of complex IP disputes."
+    title: 'Constitutional Law',
+    description: 'Experience in handling constitutional matters and public interest litigation before the High Court.'
   },
   {
-    title: "Banking and Finance",
-    description: "Legal services for banking regulations, financial transactions, loan agreements, and regulatory compliance matters."
-  },
-  {
-    title: "Administrative Law",
-    description: "Representation before administrative tribunals, government agencies, and in regulatory compliance matters across various sectors."
-  },
-  {
-    title: "Media and Entertainment",
-    description: "Legal services for content creation, distribution, licensing, and regulatory matters in the media and entertainment industry."
-  },
-  {
-    title: "White Collar Crimes",
-    description: "Expert defense and representation in cases involving corporate fraud, embezzlement, insider trading, and other white collar criminal matters."
+    title: 'Corporate Law',
+    description: 'Advising businesses on legal compliance, contracts, and corporate governance matters.'
   }
 ];
 </script> 
