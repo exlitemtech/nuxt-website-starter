@@ -85,7 +85,7 @@
           
           <div class="shadow-md">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8993703813526!2d85.1354!3d25.6154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed567a0fbb6c1f%3A0x39ed567a0fbb6c1f!2sPatna%20High%20Court!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8993703813526!2d85.1354!3d25.6154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed567a0fbb6c1f%3A0x133415a0427d094!2sBihar%20Bar%20Council%20Bhawan!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
               width="100%" 
               height="100%" 
               style="border:0;" 
