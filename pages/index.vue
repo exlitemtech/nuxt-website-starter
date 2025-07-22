@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[var(--color-warm-gray-50)] flex flex-col">
+  <div class="min-h-screen bg-[var(--color-beige-50)] flex flex-col">
     <Header />
     <HeroSection />
     
@@ -19,6 +19,7 @@
     <Footer />
     <ColorToggle />
     <NoticeDialog />
+    <ThemeSwitcher />
   </div>
 </template>
 
@@ -33,4 +34,5 @@ import OurTeam from '~/components/OurTeam.vue'
 import Awards from '~/components/Awards.vue'
 import PracticeAreas from '~/components/PracticeAreas.vue'
 import Updates from '~/components/Updates.vue'
+import ThemeSwitcher from '~/components/ThemeSwitcher.vue'
 </script>

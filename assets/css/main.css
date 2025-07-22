@@ -1,8 +1,13 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "./theme-enhancements.css";
 
-/* Law Firm Color Palette */
-@theme {
+/* =================================
+   PROFESSIONAL THEME (Default)
+================================= */
+:root,
+[data-theme="professional"] {
     /* Light beige and white theme */
     --color-beige-50: #fefcf9;
     --color-beige-100: #f7f3ed;
@@ -19,7 +24,6 @@
     --color-accent-300: #40cabc;
     --color-accent-400: #25b6a8;
     --color-accent-500: #00A99D;
-    /* Logo teal color */
     --color-accent-600: #008f85;
     --color-accent-700: #007972;
 
@@ -32,41 +36,179 @@
     --font-body: 'Georgia', serif;
     --font-heading: 'Libre Baskerville', 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif;
     --font-sans: 'Lato', sans-serif;
+
+    /* Component styles */
+    --border-radius: 0.375rem;
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* General styling */
+/* =================================
+   MINIMALISTIC THEME
+================================= */
+[data-theme="minimalistic"] {
+    /* Monochrome palette */
+    --color-beige-50: #ffffff;
+    --color-beige-100: #f8f9fa;
+    --color-beige-200: #e9ecef;
+    --color-beige-300: #dee2e6;
+    --color-beige-400: #ced4da;
+    --color-beige-500: #adb5bd;
+    --color-beige-600: #6c757d;
+    --color-beige-700: #495057;
+    --color-beige-800: #343a40;
+    --color-beige-900: #212529;
+
+    /* Teal accent (same as original) */
+    --color-accent-300: #40cabc;
+    --color-accent-400: #25b6a8;
+    --color-accent-500: #00A99D;
+    --color-accent-600: #008f85;
+    --color-accent-700: #007972;
+
+    /* High contrast text */
+    --color-text-light: #ffffff;
+    --color-text-dark: #212529;
+    --color-text-muted: #6c757d;
+
+    /* Modern fonts */
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Sharp, geometric styles */
+    --border-radius: 0;
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* =================================
+   CORPORATE THEME
+================================= */
+[data-theme="corporate"] {
+    /* Dark sophisticated palette */
+    --color-beige-50: #1a1a1a;
+    --color-beige-100: #2d2d2d;
+    --color-beige-200: #404040;
+    --color-beige-300: #525252;
+    --color-beige-400: #666666;
+    --color-beige-500: #737373;
+    --color-beige-600: #a3a3a3;
+    --color-beige-700: #d4d4d4;
+    --color-beige-800: #e5e5e5;
+    --color-beige-900: #f5f5f5;
+
+    /* Gold accents */
+    --color-accent-300: #ffd700;
+    --color-accent-400: #ffcd00;
+    --color-accent-500: #d4af37;
+    --color-accent-600: #b8941f;
+    --color-accent-700: #9c7a0b;
+
+    /* Dark theme text */
+    --color-text-light: #f5f5f5;
+    --color-text-dark: #f5f5f5;
+    --color-text-muted: #a3a3a3;
+
+    /* Elegant fonts */
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Playfair Display', 'Georgia', serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Sleek modern styles */
+    --border-radius: 0.5rem;
+    --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* =================================
+   CLASSIC LEGAL THEME
+================================= */
+[data-theme="classic"] {
+    /* Traditional navy and cream */
+    --color-beige-50: #fdfcf7;
+    --color-beige-100: #f8f6eb;
+    --color-beige-200: #f0eddb;
+    --color-beige-300: #e6e1c7;
+    --color-beige-400: #d9d2b0;
+    --color-beige-500: #c9bf95;
+    --color-beige-600: #b5a876;
+    --color-beige-700: #9b8f5a;
+    --color-beige-800: #807549;
+    --color-beige-900: #665c3a;
+
+    /* Navy and burgundy accents */
+    --color-accent-300: #4a5568;
+    --color-accent-400: #2d3748;
+    --color-accent-500: #1a202c;
+    --color-accent-600: #171923;
+    --color-accent-700: #0d1117;
+
+    /* Traditional text colors */
+    --color-text-light: #fdfcf7;
+    --color-text-dark: #1a202c;
+    --color-text-muted: #4a5568;
+
+    /* Classic legal fonts */
+    --font-body: 'Playfair Display', 'Times New Roman', serif;
+    --font-heading: 'Playfair Display', 'Times New Roman', serif;
+    --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+
+    /* Traditional styling */
+    --border-radius: 0.25rem;
+    --shadow-light: 0 2px 4px rgba(26, 32, 44, 0.1);
+    --shadow-medium: 0 8px 16px rgba(26, 32, 44, 0.15);
+}
+
+/* =================================
+   GLOBAL STYLES
+================================= */
 body {
     font-family: var(--font-body);
     color: var(--color-text-dark);
     background-color: var(--color-beige-50);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-text-dark);
     font-weight: 400;
     letter-spacing: 0.02em;
 }
 
-/* Custom utility classes */
+/* Theme-aware button styles */
 .btn-primary {
     background-color: var(--color-accent-500);
-    color: white;
+    color: var(--color-text-light);
     padding: 0.625rem 1.25rem;
     font-family: var(--font-sans);
     font-weight: 600;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     transition: all 0.3s ease;
     border: 1px solid var(--color-accent-600);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-light);
     backdrop-filter: blur(4px);
     font-size: 0.875rem;
     width: 100%;
+}
+
+[data-theme="minimalistic"] .btn-primary {
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="corporate"] .btn-primary {
+    background: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-600));
+    box-shadow: var(--shadow-medium);
+}
+
+[data-theme="classic"] .btn-primary {
+    font-family: var(--font-heading);
+    text-transform: none;
+    letter-spacing: 0.02em;
 }
 
 @media (min-width: 640px) {
@@ -80,7 +222,7 @@ h6 {
 .btn-primary:hover {
     background-color: var(--color-accent-600);
     transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.07);
+    box-shadow: var(--shadow-medium);
 }
 
 .btn-secondary {
@@ -89,14 +231,35 @@ h6 {
     padding: 0.625rem 1.25rem;
     font-family: var(--font-sans);
     font-weight: 600;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     transition: all 0.3s ease;
     border: 1px solid var(--color-beige-300);
     backdrop-filter: blur(4px);
     background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+    box-shadow: var(--shadow-light);
     font-size: 0.875rem;
     width: 100%;
+}
+
+[data-theme="minimalistic"] .btn-secondary {
+    border-radius: 0;
+    background-color: transparent;
+    border: 2px solid var(--color-beige-800);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="corporate"] .btn-secondary {
+    background-color: rgba(212, 175, 55, 0.1);
+    border-color: var(--color-accent-500);
+    color: var(--color-accent-400);
+}
+
+[data-theme="classic"] .btn-secondary {
+    font-family: var(--font-heading);
+    background-color: rgba(250, 250, 250, 0.9);
+    border-color: var(--color-accent-500);
 }
 
 @media (min-width: 640px) {
@@ -108,17 +271,35 @@ h6 {
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-color: var(--color-beige-400);
+    background-color: var(--color-beige-100);
+    border-color: var(--color-accent-500);
     transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-medium);
 }
 
-/* Custom styles to verify CSS is loading */
+[data-theme="corporate"] .btn-secondary:hover {
+    background-color: rgba(212, 175, 55, 0.2);
+}
+
+/* Theme-specific animations */
+[data-theme="minimalistic"] * {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="corporate"] * {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-theme="classic"] * {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom test class */
 .css-test {
-    background-color: purple;
-    color: white;
+    background-color: var(--color-accent-500);
+    color: var(--color-text-light);
     padding: 1rem;
     margin: 1rem;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
 }
