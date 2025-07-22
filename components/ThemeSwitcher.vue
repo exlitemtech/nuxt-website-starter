@@ -7,9 +7,12 @@
         'theme-toggle-btn',
         { 'active': isOpen }
       ]"
-      aria-label="Theme Switcher"
+      aria-label="Design Switcher"
     >
-      <div class="current-theme-icon">{{ themes[currentTheme].icon }}</div>
+      <div class="current-icons">
+        <span class="current-theme-icon">{{ themes[currentTheme].icon }}</span>
+        <span class="current-layout-icon">{{ layouts[currentLayout].icon }}</span>
+      </div>
       <div class="toggle-indicator">
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
@@ -24,35 +27,69 @@
       </div>
     </button>
 
-    <!-- Theme Options Panel -->
+    <!-- Design Options Panel -->
     <transition name="theme-panel">
       <div v-if="isOpen" class="theme-panel">
         <div class="theme-panel-header">
-          <h3>Choose Theme</h3>
+          <h3>Website Design</h3>
           <button @click="isOpen = false" class="close-btn" aria-label="Close">×</button>
         </div>
         
-        <div class="theme-options">
-          <button
-            v-for="(theme, key) in themes"
-            :key="key"
-            @click="selectTheme(key)"
-            :class="[
-              'theme-option',
-              { 'active': currentTheme === key }
-            ]"
-          >
-            <div class="theme-icon">{{ theme.icon }}</div>
-            <div class="theme-info">
-              <div class="theme-name">{{ theme.name }}</div>
-              <div class="theme-description">{{ theme.description }}</div>
-            </div>
-            <div v-if="currentTheme === key" class="check-mark">✓</div>
-          </button>
+        <!-- Theme Section -->
+        <div class="section">
+          <div class="section-header">
+            <h4>🎨 Visual Themes</h4>
+            <div class="section-subtitle">Choose your color & style</div>
+          </div>
+          <div class="options-grid">
+            <button
+              v-for="(theme, key) in themes"
+              :key="key"
+              @click="selectTheme(key)"
+              :class="[
+                'option-btn',
+                { 'active': currentTheme === key }
+              ]"
+            >
+              <div class="option-icon">{{ theme.icon }}</div>
+              <div class="option-info">
+                <div class="option-name">{{ theme.name }}</div>
+                <div class="option-description">{{ theme.description }}</div>
+              </div>
+              <div v-if="currentTheme === key" class="check-mark">✓</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Layout Section -->
+        <div class="section">
+          <div class="section-header">
+            <h4>📐 Page Layouts</h4>
+            <div class="section-subtitle">Choose your structure</div>
+          </div>
+          <div class="options-grid">
+            <button
+              v-for="(layout, key) in layouts"
+              :key="key"
+              @click="selectLayout(key)"
+              :class="[
+                'option-btn',
+                { 'active': currentLayout === key }
+              ]"
+            >
+              <div class="option-icon">{{ layout.icon }}</div>
+              <div class="option-info">
+                <div class="option-name">{{ layout.name }}</div>
+                <div class="option-description">{{ layout.description }}</div>
+              </div>
+              <div v-if="currentLayout === key" class="check-mark">✓</div>
+            </button>
+          </div>
         </div>
         
+        <!-- Live Preview -->
         <div class="theme-preview">
-          <div class="preview-text">Live Preview</div>
+          <div class="preview-text">Live Preview: {{ themes[currentTheme].name }} × {{ layouts[currentLayout].name }}</div>
           <div class="preview-elements">
             <div class="preview-card">
               <div class="preview-title">Nora Chambers</div>
@@ -62,6 +99,16 @@
                 <button class="preview-btn secondary">Our Team</button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Quick Access -->
+        <div class="quick-access">
+          <div class="quick-text">🚀 Popular Combinations</div>
+          <div class="quick-buttons">
+            <button @click="applyCombo('professional', 'single-page')" class="combo-btn">Classic Site</button>
+            <button @click="applyCombo('corporate', 'dashboard')" class="combo-btn">Modern Firm</button>
+            <button @click="applyCombo('minimalistic', 'magazine')" class="combo-btn">Clean Layout</button>
           </div>
         </div>
       </div>
@@ -77,7 +124,7 @@
 </template>
 
 <script setup>
-const { currentTheme, themes, setTheme, initializeTheme } = useTheme()
+const { currentTheme, currentLayout, themes, layouts, setTheme, setLayout, initializeTheme } = useTheme()
 const isOpen = ref(false)
 
 const toggleSwitcher = () => {
@@ -86,6 +133,18 @@ const toggleSwitcher = () => {
 
 const selectTheme = (themeKey) => {
   setTheme(themeKey)
+}
+
+const selectLayout = (layoutKey) => {
+  setLayout(layoutKey)
+  isOpen.value = false
+}
+
+const applyCombo = (theme, layout) => {
+  setTheme(theme)
+  setTimeout(() => {
+    setLayout(layout)
+  }, 100)
   isOpen.value = false
 }
 
@@ -117,12 +176,12 @@ onUnmounted(() => {
 .theme-toggle-btn {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   background: var(--color-accent-500);
   color: var(--color-text-light);
   border: none;
   border-radius: var(--border-radius);
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.25rem;
   box-shadow: var(--shadow-medium);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -130,6 +189,18 @@ onUnmounted(() => {
   font-weight: 600;
   backdrop-filter: blur(10px);
   border: 1px solid var(--color-accent-600);
+  min-width: 140px;
+}
+
+.current-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.current-theme-icon, .current-layout-icon {
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 [data-theme="minimalistic"] .theme-toggle-btn {
@@ -156,11 +227,6 @@ onUnmounted(() => {
   background: var(--color-accent-600);
 }
 
-.current-theme-icon {
-  font-size: 1.25rem;
-  line-height: 1;
-}
-
 .toggle-indicator {
   display: flex;
   align-items: center;
@@ -184,9 +250,10 @@ onUnmounted(() => {
   border: 1px solid var(--color-beige-200);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-medium);
-  width: 24rem;
+  width: 28rem;
   max-width: 90vw;
-  overflow: hidden;
+  max-height: 80vh;
+  overflow-y: auto;
   backdrop-filter: blur(20px);
 }
 
@@ -202,17 +269,20 @@ onUnmounted(() => {
 
 .theme-panel-header {
   display: flex;
-  justify-content: between;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.25rem;
   border-bottom: 1px solid var(--color-beige-200);
   background: var(--color-beige-100);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .theme-panel-header h3 {
   margin: 0;
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--color-text-dark);
   font-family: var(--font-heading);
 }
@@ -226,66 +296,103 @@ onUnmounted(() => {
   padding: 0.25rem;
   line-height: 1;
   transition: color 0.2s ease;
-  margin-left: auto;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close-btn:hover {
   color: var(--color-text-dark);
+  background: var(--color-beige-200);
 }
 
-.theme-options {
-  padding: 0.5rem;
+.section {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--color-beige-200);
 }
 
-.theme-option {
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+}
+
+.section-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.options-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.option-btn {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.875rem;
   background: transparent;
   border: 1px solid transparent;
   border-radius: calc(var(--border-radius) * 0.75);
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
+  text-align: left;
 }
 
-[data-theme="minimalistic"] .theme-option {
+[data-theme="minimalistic"] .option-btn {
   border-radius: 0;
+  border: 1px solid var(--color-beige-300);
 }
 
-.theme-option:hover {
+.option-btn:hover {
   background: var(--color-beige-100);
   border-color: var(--color-beige-300);
 }
 
-.theme-option.active {
+.option-btn.active {
   background: var(--color-accent-500);
   color: var(--color-text-light);
   border-color: var(--color-accent-600);
 }
 
-[data-theme="corporate"] .theme-option.active {
+[data-theme="corporate"] .option-btn.active {
   background: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-600));
 }
 
-.theme-icon {
-  font-size: 1.5rem;
-  margin-right: 0.75rem;
+.option-icon {
+  font-size: 1.25rem;
+  margin-right: 0.875rem;
   line-height: 1;
+  min-width: 1.25rem;
 }
 
-.theme-info {
+.option-info {
   flex: 1;
 }
 
-.theme-name {
+.option-name {
   font-weight: 600;
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.25rem;
   font-size: 0.875rem;
 }
 
-.theme-description {
+.option-description {
   font-size: 0.75rem;
   opacity: 0.8;
 }
@@ -297,8 +404,7 @@ onUnmounted(() => {
 }
 
 .theme-preview {
-  padding: 1rem;
-  border-top: 1px solid var(--color-beige-200);
+  padding: 1.25rem;
   background: var(--color-beige-100);
 }
 
@@ -306,7 +412,7 @@ onUnmounted(() => {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--color-text-muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -334,7 +440,7 @@ onUnmounted(() => {
 .preview-subtitle {
   font-size: 0.75rem;
   color: var(--color-text-muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.875rem;
 }
 
 .preview-buttons {
@@ -343,13 +449,14 @@ onUnmounted(() => {
 }
 
 .preview-btn {
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.875rem;
   border-radius: var(--border-radius);
   font-size: 0.75rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: var(--font-sans);
+  flex: 1;
 }
 
 [data-theme="minimalistic"] .preview-btn {
@@ -377,6 +484,51 @@ onUnmounted(() => {
 [data-theme="corporate"] .preview-btn.secondary {
   color: var(--color-accent-400);
   border-color: var(--color-accent-500);
+}
+
+.quick-access {
+  padding: 1.25rem;
+  background: var(--color-beige-100);
+  border-top: 1px solid var(--color-beige-200);
+}
+
+.quick-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.quick-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.combo-btn {
+  background: var(--color-beige-50);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-beige-300);
+  padding: 0.5rem 0.875rem;
+  border-radius: calc(var(--border-radius) * 0.75);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  min-width: 80px;
+}
+
+[data-theme="minimalistic"] .combo-btn {
+  border-radius: 0;
+}
+
+.combo-btn:hover {
+  background: var(--color-accent-500);
+  color: var(--color-text-light);
+  border-color: var(--color-accent-600);
 }
 
 .theme-backdrop {
@@ -411,19 +563,37 @@ onUnmounted(() => {
   }
   
   .theme-panel {
-    width: 20rem;
-    right: -4rem;
+    width: 26rem;
+    right: -6rem;
   }
   
   .theme-toggle-btn {
-    padding: 0.625rem 0.875rem;
+    padding: 0.875rem 1rem;
+    min-width: 120px;
   }
 }
 
 @media (max-width: 480px) {
   .theme-panel {
     width: calc(100vw - 2rem);
-    right: -6rem;
+    right: -8rem;
+  }
+  
+  .current-icons {
+    gap: 0.25rem;
+  }
+  
+  .theme-toggle-btn {
+    min-width: 100px;
+    padding: 0.75rem 0.875rem;
+  }
+  
+  .quick-buttons {
+    flex-direction: column;
+  }
+  
+  .combo-btn {
+    flex: none;
   }
 }
 </style>
