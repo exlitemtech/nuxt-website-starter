@@ -6,7 +6,8 @@
     <!-- Practice Areas Section -->
     <PracticeAreas />
     
-    
+    <!-- Updates Section -->
+    <Updates />
     
     <!-- Our Team Section -->
     <OurTeam />
@@ -31,4 +32,5 @@ import ColorToggle from '~/components/ColorToggle.vue'
 import OurTeam from '~/components/OurTeam.vue'
 import Awards from '~/components/Awards.vue'
 import PracticeAreas from '~/components/PracticeAreas.vue'
+import Updates from '~/components/Updates.vue'
 </script>

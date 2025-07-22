@@ -3,6 +3,15 @@
     <!-- Background Image Layer -->
     <div class="absolute inset-0 bg-[url('/img/nora-hero-image.png')] bg-cover bg-center"></div>
     
+    <!-- Office Conference Room Photo Placeholder -->
+    <div class="absolute top-8 right-8 w-64 h-40 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg shadow-lg hidden lg:flex items-center justify-center">
+      <div class="text-center text-white/80">
+        <div class="text-4xl mb-2">🏢</div>
+        <div class="text-sm font-medium">Office Conference Room</div>
+        <div class="text-xs opacity-75">(Insert faded photo)</div>
+      </div>
+    </div>
+    
     <!-- Glassmorphic Overlay -->
     <div class="absolute inset-0 bg-gradient-to-r from-[var(--color-beige-100)]/40 to-[var(--color-beige-200)]/50 backdrop-blur-[4px]">
       <!-- Animated light reflection -->
@@ -18,21 +27,27 @@
         
         <div class="relative z-10"> <!-- Content wrapper to keep text above the animation -->
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 font-[var(--font-heading)] leading-tight text-[var(--color-text-dark)] tracking-wide">Committed to <span class="text-[var(--color-accent-500)] font-bold drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]">Excellence</span> in Legal Practice</h1>
-          <p class="text-lg md:text-xl mb-6 md:mb-10 text-[var(--color-text-dark)] max-w-2xl leading-relaxed">
-            With over 25 years of experience, our attorneys provide exceptional legal representation and personalized service in corporate, family, and real estate law.
+          <p class="text-lg md:text-xl mb-6 md:mb-10 text-[var(--color-text-dark)] max-w-3xl leading-relaxed">
+            Leveraging multi-sectoral legal expertise, Nora Chambers delivers comprehensive legal representation and tailored counsel across dispute resolution, corporate advisory, insolvency, intellectual property, securities law, direct tax, and related practice areas.
+          </p>
+          <p class="text-base md:text-lg mb-6 md:mb-10 text-[var(--color-text-dark)] max-w-3xl leading-relaxed">
+            The firm has earned client recognition for its commitment to delivering clear, actionable legal guidance and its attorneys' innovative problem-solving approach to complex legal challenges.
+          </p>
+          <p class="text-base md:text-lg mb-6 md:mb-10 text-[var(--color-text-dark)] max-w-3xl leading-relaxed">
+            Comprising seasoned partners and accomplished associates, Nora Chambers serves as trusted legal counsel to prominent corporations, handling both high-stakes business disputes and day-to-day legal requirements with equal proficiency.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <a 
-              href="#contact" 
+              href="#practice-areas" 
               class="btn-primary text-center inline-block backdrop-blur-sm bg-[var(--color-accent-500)]/90 hover:bg-[var(--color-accent-600)]"
             >
-              Schedule a Consultation
+              Our Practice Areas
             </a>
             <a 
-              href="#practice-areas" 
+              href="#our-team" 
               class="btn-secondary text-center inline-block backdrop-blur-sm bg-white/30 border border-white/40 hover:bg-white/40"
             >
-              Our Practice Areas
+              Our Team
             </a>
           </div>
         </div>

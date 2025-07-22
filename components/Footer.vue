@@ -3,8 +3,9 @@
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
         <div class="md:col-span-4">
-          <h3 class="text-2xl mb-4 font-[var(--font-heading)] text-[var(--color-text-dark)] tracking-wide">Nora Chambers</h3>
-          <p class="text-[var(--color-text-muted)] mb-4">Dedicated to providing exceptional legal services with integrity and professionalism since 1998.</p>
+          <h3 class="text-2xl mb-4 font-[var(--font-heading)] text-[var(--color-text-dark)] tracking-wide">Nora Legal Consultants LLP</h3>
+          <p class="text-[var(--color-text-muted)] mb-4 font-medium">Committed to Excellence in Legal Practice</p>
+          <p class="text-[var(--color-text-muted)] mb-4 text-sm leading-relaxed">Leveraging multi-sectoral legal expertise, Nora Chambers delivers comprehensive legal representation and tailored counsel across dispute resolution, corporate advisory, insolvency, intellectual property, securities law, direct tax, and related practice areas.</p>
           <p class="text-[var(--color-accent-500)]">Bar Association Certified</p>
         </div>
         <div class="md:col-span-5">
@@ -30,7 +31,7 @@
         </div>
       </div>
       <div class="border-t border-[var(--color-beige-300)] mt-10 pt-6 text-center text-[var(--color-text-muted)]">
-        <p>&copy; {{ new Date().getFullYear() }} Nora Chambers Law Firm. All rights reserved.</p>
+        <p>&copy; 2025. 'Nora Chambers' and its associated device are registered trademarks. All rights reserved.</p>
         <div class="mt-2 text-sm">
           <a href="#privacy" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors mr-4">Privacy Policy</a>
           <a href="#terms" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-500)] transition-colors">Terms of Service</a>

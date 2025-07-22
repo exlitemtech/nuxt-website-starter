@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-md transition-all duration-300">
+  <header class="fixed top-0 left-0 right-0 w-full z-50 bg-[var(--color-accent-300)] shadow-md transition-all duration-300">
     <div class="container mx-auto px-4 py-4 border-b border-[var(--color-beige-200)]">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
